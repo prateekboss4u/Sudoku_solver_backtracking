@@ -25,9 +25,9 @@ def solve(board):
     for i in range(1,10):
         if is_valid(board, i, (row, col)):
             board[row][col] = i
-            os.system(CLEAR)        #Comment this line if you don't want to see the solution to increase the speed
-            print("\nSolution: \n") #Comment this line if you don't want to see the solution to increase the speed
-            print_sudoku(sudoku)    #Comment this line if you don't want to see the solution to increase the speed
+            os.system(CLEAR)        
+            print("\nSolution: \n") 
+            print_sudoku(sudoku)    
 
             if solve(board):
                 return True
